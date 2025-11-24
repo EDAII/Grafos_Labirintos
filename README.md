@@ -1,36 +1,70 @@
-# Repositório Template
-Repositório de Template para os projetos da disciplina 
-```
-Nome do Repositório (Apague este tópico)
-  O nome do repositório deve seguir o padrão <TemaProjeto>_<Nome Projeto>.
-  O nome do projeto deve representar o que foi implementado no mesmo (Ex:
-  Game xyz, Implementações Otimizadas de Algoritmos, Aplicativo xpto)
+# Grafos - Gerador de Labirintos
 
-Os temas de projeto são:  
- - Busca - Algoritmos de busca  
- - Ord_quad - Algoritmos de ordenação O(n²)  
- - Ord_nlogn - Algoritmos de ordenação O(n*log(n))  
- - Arv - Algoritmos de manipulação de Árvores  
- - Grafo - Algoritmos de manipulação de Grafos  
+**Número da Lista**: 18<br>
+**Conteúdo da Disciplina**: Grafos <br>
+
+## Alunos
+|Matrícula | Aluno |
+| -- | -- |
+| 20/2046229  |  Kallyne Macêdo Passos |
+| 20/0022199  | Leonardo Sobrinho de Aguiar |
  
- Ex: Busca_ConcorrenteDaGoogle
-```
-## Alunos  
-| Matrícula | Nome |  
-|-----------------------|---------------------|  
-| xx/xxxxxxx | xxxx xxxx xxxxx |  
-| xx/xxxxxxx | xxxx xxxx xxxxx |  
 ## Descrição do projeto
-Aqui você deve dizer o objetivo deste projeto e o que realmente foi feito neste repositório.
+
+Este projeto tem como objetivo explorar a aplicação de algoritmos de travessia de grafos com a geração e resolução de labirintos. Dessa forma, foi desenvolvido um sistema que atua em duas etapas distintas, cada uma utilizando um algoritmo: A primeira etapa utiliza uma variação randomizada da Busca em Profundidade (DFS), em que o algoritmo escava/gera o labirinto iniciando com uma grade cheia de paredes, caminha aleatoriamente até ficar preso e, em seguida, realiza backtracking, garantindo um labirinto conexo, sem ciclos e com caminhos únicos entre quaisquer dois pontos; e a segunda etapa utiliza a Busca em Largura (BFS) para encontrar a saída. Através da exploração do grafo em camadas de distância, a BFS garante encontrar o caminho mais curto possível entre a origem e o destino, finalizando o desafio do labirinto.  
+
 ## Guia de instalação
-Aqui devem estar descritas as dependências do projeto (versões de linguagens e ferramentas) e as instruções necessárias para executar o projeto. 
-### Dependências do projeto
-### Como executar o projeto
+
+**Linguagem**: Python, HTML, CSS (Bootstrap) e JavaScript<br>
+**Framework**: Flask<br>
+**Pré-requisitos**: Navegador instalado, Python, Flask e CORS presentes no computador; clonar o repositório localmente.
+
+### Passo a Passo
+
+### 1. Clonar repositório:
+```bash
+git clone https://github.com/EDAII/Grafos_Labirintos.git
+```
+### 2. Instale as Dependências:
+Abra um terminal ou prompt de comando na pasta do projeto e execute:
+```bash
+pip install Flask Flask-CORS
+```
+### 3. Inicie o Servidor:
+Digite no mesmo terminal:
+```bash
+python app.py
+```
+### 4. Acesse a Aplicação:
+Abra seu navegador web e acesse o seguinte endereço: http://127.0.0.1:5001
+
+## Uso
+
+1. Na tela inicial, defina o número de Linhas e Colunas desejado para o labirinto (ex: 15x20).
+2. Clique no botão azul "1. Gerar". O algoritmo criará um labirinto aleatório instantaneamente.
+- O quadrado Verde indica o início (0,0).
+- O quadrado Vermelho indica o fim (N,M).
+3. Clique no botão verde "2. Resolver". O algoritmo calculará e destacará em amarelo o caminho mais curto até a saída.
+
 ## Capturas de tela
-Neste tópico você deve adicionar imagens do funcionamento do projeto.  
- - As imagens devem ser salvas no repositório.
- - Imagens salvas em domínios eternos tendem a ficar indisponíveis e devem ser evitadas.   
+
+<div align="center">Página inicial com labirinto 15x15 </div>
+<img width="1613" height="937" alt="image" src="https://github.com/user-attachments/assets/55f14bc7-63b2-4a66-bd9d-21bde35d436d" />
+<br>
+
+<div align="center">Labirinto 10x15 gerado </div>
+<img width="1643" height="928" alt="image" src="https://github.com/user-attachments/assets/d2463721-9d4e-4f42-ad4b-cfd0047247cd" />
+
+<br>
+
+<div align="center">Labirinto 10x15 resolvido com BFS</div>
+<img width="1588" height="932" alt="image" src="https://github.com/user-attachments/assets/d3ade5a2-ac0e-44c3-9b89-8b705e86052d" />
+
+
 ## Conclusões
-Aqui você diz se o algoritmo utilizado foi útil, se tem limitações, etc.
-## Referências
-Caso tenha utilizado algum agoritmo como base, citar o mesmo devidamente para  evitar quaisquer denuncias de plágio.
+Toda a estrutura de dados (nós e arestas do grafo) é gerada matematicamente pelo Python a cada nova execução, o que demonstra a eficiência dos algoritmos trabalhados em cenários complexos. Assim, é possível testar inúmeras variações de grafos sem a necessidade de inserir dados manualmente.
+
+
+## Gravação 
+
+[Link da gravação]()
