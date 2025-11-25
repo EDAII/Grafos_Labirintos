@@ -48,17 +48,17 @@ Abra seu navegador web e acesse o seguinte endereço: http://127.0.0.1:5001
 
 ## Capturas de tela
 
-<div align="center">Página inicial com labirinto 15x15 </div>
-<img width="1613" height="937" alt="image" src="https://github.com/user-attachments/assets/55f14bc7-63b2-4a66-bd9d-21bde35d436d" />
+<div align="center">Página inicial com labirinto 10x15 </div>
+<img width="1694" height="929" alt="image" src="https://github.com/user-attachments/assets/dea8acd4-dfa2-4a4b-8ba0-3b67725901d4" />
 <br>
 
-<div align="center">Labirinto 10x15 gerado </div>
-<img width="1643" height="928" alt="image" src="https://github.com/user-attachments/assets/d2463721-9d4e-4f42-ad4b-cfd0047247cd" />
+<div align="center">Labirinto 10x15 resolvido no modo rápido </div>
+<img width="1604" height="928" alt="image" src="https://github.com/user-attachments/assets/e64bf391-dda8-419f-9152-2cff0fdf3e83" />
 
 <br>
 
-<div align="center">Labirinto 10x15 resolvido com BFS</div>
-<img width="1588" height="932" alt="image" src="https://github.com/user-attachments/assets/d3ade5a2-ac0e-44c3-9b89-8b705e86052d" />
+<div align="center">Labirinto 10x15 resolvido no modo lento</div>
+<img width="1648" height="934" alt="image" src="https://github.com/user-attachments/assets/803710c3-150b-471c-a8c2-1603973bc842" />
 
 
 ## Conclusões
