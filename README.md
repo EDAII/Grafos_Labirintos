@@ -42,9 +42,11 @@ Abra seu navegador web e acesse o seguinte endereço: http://127.0.0.1:5001
 
 1. Na tela inicial, defina o número de Linhas e Colunas desejado para o labirinto (ex: 15x20).
 2. Clique no botão azul "1. Gerar". O algoritmo criará um labirinto aleatório instantaneamente.
-- O quadrado Verde indica o início (0,0).
-- O quadrado Vermelho indica o fim (N,M).
-3. Clique no botão verde "2. Resolver". O algoritmo calculará e destacará em amarelo o caminho mais curto até a saída.
+   - O quadrado Verde indica o início (0,0).
+   - O quadrado Vermelho indica o fim (N,M).
+3. Escolha a forma de resolução:
+   - Clique no botão verde **"2. Resolver Rápido"** para destacar instantaneamente o caminho mais curto em amarelo.
+   - Clique no botão amarelo **"3. Resolver Lento"** para visualizar a animação da busca (nós visitados em vermelho) antes de mostrar a solução.
 
 ## Capturas de tela
 
@@ -67,4 +69,4 @@ Toda a estrutura de dados (nós e arestas do grafo) é gerada matematicamente pe
 
 ## Gravação 
 
-[Link da gravação]()
+[Link da gravação](https://www.youtube.com/watch?v=2gZoB9Kt9CI)
