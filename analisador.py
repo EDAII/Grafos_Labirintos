@@ -49,18 +49,28 @@ class GeradorLabirinto:
         queue = deque([(inicio, [inicio])])
         visited = {inicio}
         
+        # Lista para a ordem de visitação
+        ordem_visitada = [inicio]
+        
         while queue:
             (atual, caminho) = queue.popleft()
             
             if atual == fim:
-                # Retorna IDs string formatados para o frontend
-                return [f"{n[0]}-{n[1]}" for n in caminho]
+                # Formata o caminho e os visitados
+                caminho_formatado = [f"{n[0]}-{n[1]}" for n in caminho]
+                visitados_formatados = [f"{n[0]}-{n[1]}" for n in ordem_visitada]
+                
+                return {
+                    "caminho": caminho_formatado,
+                    "visitados": visitados_formatados
+                }
             
             for vizinho in self.grafo.get(atual, []):
                 if vizinho not in visited:
                     visited.add(vizinho)
+                    ordem_visitada.append(vizinho) # Registra a visita
                     queue.append((vizinho, caminho + [vizinho]))
-        return []
+        return {"caminho": [], "visitados": []}
 
     # Formata para o Vis.js
     def obter_dados_visjs(self):
